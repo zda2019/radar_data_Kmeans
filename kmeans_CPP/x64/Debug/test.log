@@ -1,0 +1,9 @@
+﻿  kmean.cpp
+E:\Desktop\ingProject\signalsort_cpp\test6\test\kmean.cpp(14,32): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+E:\Desktop\ingProject\signalsort_cpp\test6\test\kmean.cpp(15,34): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+E:\Desktop\ingProject\signalsort_cpp\test6\test\kmean.cpp(100,74): warning C4267: “参数”: 从“size_t”转换到“_Ty”，可能丢失数据
+          with
+          [
+              _Ty=int
+          ]
+  test.vcxproj -> E:\Desktop\ingProject\signalsort_cpp\test6\test\x64\Debug\test.exe

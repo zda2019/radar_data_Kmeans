@@ -1,0 +1,8 @@
+axi4Lite.c.o: \
+ C:/ProgramData/MATLAB/SupportPackages/R2023a/toolbox/target/supportpackages/zynq/src/axi4Lite.c \
+ C:/PROGRA~3/MATLAB/SUPPOR~1/R2023a/toolbox/target/SUPPOR~1/zynq/include/mwipcore_ioctl.h \
+ C:/PROGRA~3/MATLAB/SUPPOR~1/R2023a/toolbox/target/SUPPOR~1/zynq/include/axi_interface.h
+
+C:/PROGRA~3/MATLAB/SUPPOR~1/R2023a/toolbox/target/SUPPOR~1/zynq/include/mwipcore_ioctl.h:
+
+C:/PROGRA~3/MATLAB/SUPPOR~1/R2023a/toolbox/target/SUPPOR~1/zynq/include/axi_interface.h:

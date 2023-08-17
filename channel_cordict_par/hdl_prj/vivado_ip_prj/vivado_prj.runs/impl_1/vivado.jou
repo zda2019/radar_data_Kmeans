@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Apr 25 13:28:22 2023
+# Process ID: 16600
+# Current directory: E:/Desktop/ingProject/Simulink_prj/RWR_to_zynq/channel_cordict_par_test_4_24/hdl_prj/vivado_ip_prj/vivado_prj.runs/impl_1
+# Command line: vivado.exe -log system_top_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source system_top_wrapper.tcl -notrace
+# Log file: E:/Desktop/ingProject/Simulink_prj/RWR_to_zynq/channel_cordict_par_test_4_24/hdl_prj/vivado_ip_prj/vivado_prj.runs/impl_1/system_top_wrapper.vdi
+# Journal file: E:/Desktop/ingProject/Simulink_prj/RWR_to_zynq/channel_cordict_par_test_4_24/hdl_prj/vivado_ip_prj/vivado_prj.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source system_top_wrapper.tcl -notrace

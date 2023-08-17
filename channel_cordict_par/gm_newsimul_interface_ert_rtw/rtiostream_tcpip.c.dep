@@ -1,0 +1,8 @@
+rtiostream_tcpip.c.o: \
+ D:/MATLAB/R2023a/toolbox/coder/rtiostream/src/rtiostreamtcpip/rtiostream_tcpip.c \
+ D:/MATLAB/R2023a/toolbox/coder/rtiostream/src/rtiostream.h \
+ D:/MATLAB/R2023a/extern/include/tmwtypes.h
+
+D:/MATLAB/R2023a/toolbox/coder/rtiostream/src/rtiostream.h:
+
+D:/MATLAB/R2023a/extern/include/tmwtypes.h:

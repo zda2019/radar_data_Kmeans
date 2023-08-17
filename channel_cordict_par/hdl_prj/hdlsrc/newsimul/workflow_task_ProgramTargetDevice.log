@@ -1,0 +1,13 @@
+Task "Program Target Device" successful.
+Generated logfile: 
+
+
+Downloading target FPGA device configuration over Ethernet to SD card ...
+# Copied /tmp/hdlcoder_rd to /mnt/hdlcoder_rd
+# Copying Bitstream hdlcoder_system.bit to /mnt/hdlcoder_rd
+# Set Bitstream to hdlcoder_rd/hdlcoder_system.bit
+# Copying Devicetree devicetree_axilite_iio.dtb to /mnt/hdlcoder_rd
+# Set Devicetree to hdlcoder_rd/devicetree_axilite_iio.dtb
+# Set up boot for Reference Design: 'Default system'
+
+Programming done. The system will now reboot for persistent changes to take effect.

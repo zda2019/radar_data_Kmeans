@@ -1,0 +1,10 @@
+SLStudio.Utils.RemoveHighlighting(get_param('newsimul', 'handle'));
+SLStudio.Utils.RemoveHighlighting(get_param('gm_newsimul', 'handle'));
+annotate_port('gm_newsimul/Subsystem/Subsystem', 1, 1, '');
+annotate_port('newsimul/Subsystem/Subsystem', 1, 1, '');
+annotate_port('gm_newsimul/Subsystem/Subsystem/Deserializer1D', 1, 1, '');
+annotate_port('newsimul/Subsystem/Subsystem/Deserializer1D', 1, 1, '');
+annotate_port('gm_newsimul/Subsystem/Subsystem/Channelizer', 1, 1, '');
+annotate_port('newsimul/Subsystem/Subsystem/Channelizer', 1, 1, '');
+annotate_port('gm_newsimul/Subsystem/Subsystem/Channelizer', 1, 1, '');
+annotate_port('newsimul/Subsystem/Subsystem/Channelizer', 1, 1, '');

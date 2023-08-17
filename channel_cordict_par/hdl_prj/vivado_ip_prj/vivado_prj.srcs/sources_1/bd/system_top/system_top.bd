@@ -1,0 +1,1373 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xCC6CFA5306BD3ECB",
+      "device": "xc7z020clg484-1",
+      "name": "system_top",
+      "synth_flow_mode": "None",
+      "tool_version": "2019.1",
+      "validated": "true"
+    },
+    "design_tree": {
+      "axi_cpu_interconnect": {
+        "s00_couplers": {
+          "s00_regslice": "",
+          "auto_cc": "",
+          "auto_pc": ""
+        }
+      },
+      "const_intr_concat_gnd": "",
+      "core_clkwiz": "",
+      "intr_concat": "",
+      "sys_100m_rstgen": "",
+      "sys_core_rstgen": "",
+      "sys_cpu": "",
+      "Subsystem_ip_0": ""
+    },
+    "interface_ports": {
+      "DDR": {
+        "mode": "Master",
+        "vlnv": "xilinx.com:interface:ddrx_rtl:1.0",
+        "parameters": {
+          "AXI_ARBITRATION_SCHEME": {
+            "value": "TDM",
+            "value_src": "default"
+          },
+          "BURST_LENGTH": {
+            "value": "8",
+            "value_src": "default"
+          },
+          "CAN_DEBUG": {
+            "value": "false",
+            "value_src": "default"
+          },
+          "CAS_LATENCY": {
+            "value": "11",
+            "value_src": "default"
+          },
+          "CAS_WRITE_LATENCY": {
+            "value": "11",
+            "value_src": "default"
+          },
+          "CS_ENABLED": {
+            "value": "true",
+            "value_src": "default"
+          },
+          "DATA_MASK_ENABLED": {
+            "value": "true",
+            "value_src": "default"
+          },
+          "DATA_WIDTH": {
+            "value": "8",
+            "value_src": "default"
+          },
+          "MEMORY_TYPE": {
+            "value": "COMPONENTS",
+            "value_src": "default"
+          },
+          "MEM_ADDR_MAP": {
+            "value": "ROW_COLUMN_BANK",
+            "value_src": "default"
+          },
+          "SLOT": {
+            "value": "Single",
+            "value_src": "default"
+          },
+          "TIMEPERIOD_PS": {
+            "value": "1250",
+            "value_src": "default"
+          }
+        }
+      },
+      "FIXED_IO": {
+        "mode": "Master",
+        "vlnv": "xilinx.com:display_processing_system7:fixedio_rtl:1.0",
+        "parameters": {
+          "CAN_DEBUG": {
+            "value": "false",
+            "value_src": "default"
+          }
+        }
+      }
+    },
+    "components": {
+      "axi_cpu_interconnect": {
+        "vlnv": "xilinx.com:ip:axi_interconnect:2.1",
+        "xci_name": "system_top_axi_cpu_interconnect_0",
+        "parameters": {
+          "NUM_MI": {
+            "value": "1"
+          },
+          "S00_HAS_REGSLICE": {
+            "value": "4"
+          }
+        },
+        "interface_ports": {
+          "S00_AXI": {
+            "mode": "Slave",
+            "vlnv": "xilinx.com:interface:aximm_rtl:1.0"
+          },
+          "M00_AXI": {
+            "mode": "Master",
+            "vlnv": "xilinx.com:interface:aximm_rtl:1.0"
+          }
+        },
+        "ports": {
+          "ACLK": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "ARESETN"
+              }
+            }
+          },
+          "ARESETN": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "S00_ACLK": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_BUSIF": {
+                "value": "S00_AXI"
+              },
+              "ASSOCIATED_RESET": {
+                "value": "S00_ARESETN"
+              }
+            }
+          },
+          "S00_ARESETN": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "M00_ACLK": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_BUSIF": {
+                "value": "M00_AXI"
+              },
+              "ASSOCIATED_RESET": {
+                "value": "M00_ARESETN"
+              }
+            }
+          },
+          "M00_ARESETN": {
+            "type": "rst",
+            "direction": "I"
+          }
+        },
+        "components": {
+          "s00_couplers": {
+            "interface_ports": {
+              "M_AXI": {
+                "mode": "Master",
+                "vlnv": "xilinx.com:interface:aximm_rtl:1.0"
+              },
+              "S_AXI": {
+                "mode": "Slave",
+                "vlnv": "xilinx.com:interface:aximm_rtl:1.0"
+              }
+            },
+            "ports": {
+              "M_ACLK": {
+                "type": "clk",
+                "direction": "I",
+                "parameters": {
+                  "ASSOCIATED_BUSIF": {
+                    "value": "M_AXI"
+                  },
+                  "ASSOCIATED_RESET": {
+                    "value": "M_ARESETN"
+                  }
+                }
+              },
+              "M_ARESETN": {
+                "type": "rst",
+                "direction": "I"
+              },
+              "S_ACLK": {
+                "type": "clk",
+                "direction": "I",
+                "parameters": {
+                  "ASSOCIATED_BUSIF": {
+                    "value": "S_AXI"
+                  },
+                  "ASSOCIATED_RESET": {
+                    "value": "S_ARESETN"
+                  }
+                }
+              },
+              "S_ARESETN": {
+                "type": "rst",
+                "direction": "I"
+              }
+            },
+            "components": {
+              "s00_regslice": {
+                "vlnv": "xilinx.com:ip:axi_register_slice:2.1",
+                "xci_name": "system_top_s00_regslice_0"
+              },
+              "auto_cc": {
+                "vlnv": "xilinx.com:ip:axi_clock_converter:2.1",
+                "xci_name": "system_top_auto_cc_0"
+              },
+              "auto_pc": {
+                "vlnv": "xilinx.com:ip:axi_protocol_converter:2.1",
+                "xci_name": "system_top_auto_pc_0",
+                "parameters": {
+                  "MI_PROTOCOL": {
+                    "value": "AXI4LITE"
+                  },
+                  "SI_PROTOCOL": {
+                    "value": "AXI3"
+                  }
+                }
+              }
+            },
+            "interface_nets": {
+              "s00_couplers_to_s00_regslice": {
+                "interface_ports": [
+                  "S_AXI",
+                  "s00_regslice/S_AXI"
+                ]
+              },
+              "auto_pc_to_s00_couplers": {
+                "interface_ports": [
+                  "M_AXI",
+                  "auto_pc/M_AXI"
+                ]
+              },
+              "auto_cc_to_auto_pc": {
+                "interface_ports": [
+                  "auto_cc/M_AXI",
+                  "auto_pc/S_AXI"
+                ]
+              },
+              "s00_regslice_to_auto_cc": {
+                "interface_ports": [
+                  "s00_regslice/M_AXI",
+                  "auto_cc/S_AXI"
+                ]
+              }
+            },
+            "nets": {
+              "S_ACLK_1": {
+                "ports": [
+                  "S_ACLK",
+                  "s00_regslice/aclk",
+                  "auto_cc/s_axi_aclk"
+                ]
+              },
+              "S_ARESETN_1": {
+                "ports": [
+                  "S_ARESETN",
+                  "s00_regslice/aresetn",
+                  "auto_cc/s_axi_aresetn"
+                ]
+              },
+              "M_ACLK_1": {
+                "ports": [
+                  "M_ACLK",
+                  "auto_cc/m_axi_aclk",
+                  "auto_pc/aclk"
+                ]
+              },
+              "M_ARESETN_1": {
+                "ports": [
+                  "M_ARESETN",
+                  "auto_cc/m_axi_aresetn",
+                  "auto_pc/aresetn"
+                ]
+              }
+            }
+          }
+        },
+        "interface_nets": {
+          "axi_cpu_interconnect_to_s00_couplers": {
+            "interface_ports": [
+              "S00_AXI",
+              "s00_couplers/S_AXI"
+            ]
+          },
+          "s00_couplers_to_axi_cpu_interconnect": {
+            "interface_ports": [
+              "M00_AXI",
+              "s00_couplers/M_AXI"
+            ]
+          }
+        },
+        "nets": {
+          "axi_cpu_interconnect_ACLK_net": {
+            "ports": [
+              "M00_ACLK",
+              "s00_couplers/M_ACLK"
+            ]
+          },
+          "axi_cpu_interconnect_ARESETN_net": {
+            "ports": [
+              "M00_ARESETN",
+              "s00_couplers/M_ARESETN"
+            ]
+          },
+          "S00_ACLK_1": {
+            "ports": [
+              "S00_ACLK",
+              "s00_couplers/S_ACLK"
+            ]
+          },
+          "S00_ARESETN_1": {
+            "ports": [
+              "S00_ARESETN",
+              "s00_couplers/S_ARESETN"
+            ]
+          }
+        }
+      },
+      "const_intr_concat_gnd": {
+        "vlnv": "xilinx.com:ip:xlconstant:1.1",
+        "xci_name": "system_top_const_intr_concat_gnd_0",
+        "parameters": {
+          "CONST_VAL": {
+            "value": "0"
+          },
+          "CONST_WIDTH": {
+            "value": "1"
+          }
+        }
+      },
+      "core_clkwiz": {
+        "vlnv": "xilinx.com:ip:clk_wiz:6.0",
+        "xci_name": "system_top_core_clkwiz_0",
+        "parameters": {
+          "CLKOUT1_REQUESTED_OUT_FREQ": {
+            "value": "50.000"
+          },
+          "PRIM_SOURCE": {
+            "value": "Global_buffer"
+          },
+          "RESET_TYPE": {
+            "value": "ACTIVE_LOW"
+          }
+        }
+      },
+      "intr_concat": {
+        "vlnv": "xilinx.com:ip:xlconcat:2.1",
+        "xci_name": "system_top_intr_concat_0",
+        "parameters": {
+          "NUM_PORTS": {
+            "value": "16"
+          }
+        }
+      },
+      "sys_100m_rstgen": {
+        "vlnv": "xilinx.com:ip:proc_sys_reset:5.0",
+        "xci_name": "system_top_sys_100m_rstgen_0",
+        "parameters": {
+          "C_EXT_RST_WIDTH": {
+            "value": "1"
+          }
+        }
+      },
+      "sys_core_rstgen": {
+        "vlnv": "xilinx.com:ip:proc_sys_reset:5.0",
+        "xci_name": "system_top_sys_core_rstgen_0",
+        "parameters": {
+          "C_EXT_RST_WIDTH": {
+            "value": "1"
+          }
+        }
+      },
+      "sys_cpu": {
+        "vlnv": "xilinx.com:ip:processing_system7:5.5",
+        "xci_name": "system_top_sys_cpu_0",
+        "parameters": {
+          "PCW_ACT_APU_PERIPHERAL_FREQMHZ": {
+            "value": "666.666687"
+          },
+          "PCW_ACT_CAN_PERIPHERAL_FREQMHZ": {
+            "value": "23.809523"
+          },
+          "PCW_ACT_DCI_PERIPHERAL_FREQMHZ": {
+            "value": "10.158730"
+          },
+          "PCW_ACT_ENET0_PERIPHERAL_FREQMHZ": {
+            "value": "25.000000"
+          },
+          "PCW_ACT_ENET1_PERIPHERAL_FREQMHZ": {
+            "value": "10.000000"
+          },
+          "PCW_ACT_FPGA0_PERIPHERAL_FREQMHZ": {
+            "value": "100.000000"
+          },
+          "PCW_ACT_FPGA1_PERIPHERAL_FREQMHZ": {
+            "value": "200.000000"
+          },
+          "PCW_ACT_FPGA2_PERIPHERAL_FREQMHZ": {
+            "value": "10.000000"
+          },
+          "PCW_ACT_FPGA3_PERIPHERAL_FREQMHZ": {
+            "value": "10.000000"
+          },
+          "PCW_ACT_PCAP_PERIPHERAL_FREQMHZ": {
+            "value": "200.000000"
+          },
+          "PCW_ACT_QSPI_PERIPHERAL_FREQMHZ": {
+            "value": "200.000000"
+          },
+          "PCW_ACT_SDIO_PERIPHERAL_FREQMHZ": {
+            "value": "50.000000"
+          },
+          "PCW_ACT_SMC_PERIPHERAL_FREQMHZ": {
+            "value": "10.000000"
+          },
+          "PCW_ACT_SPI_PERIPHERAL_FREQMHZ": {
+            "value": "10.000000"
+          },
+          "PCW_ACT_TPIU_PERIPHERAL_FREQMHZ": {
+            "value": "200.000000"
+          },
+          "PCW_ACT_TTC0_CLK0_PERIPHERAL_FREQMHZ": {
+            "value": "111.111115"
+          },
+          "PCW_ACT_TTC0_CLK1_PERIPHERAL_FREQMHZ": {
+            "value": "111.111115"
+          },
+          "PCW_ACT_TTC0_CLK2_PERIPHERAL_FREQMHZ": {
+            "value": "111.111115"
+          },
+          "PCW_ACT_TTC1_CLK0_PERIPHERAL_FREQMHZ": {
+            "value": "111.111115"
+          },
+          "PCW_ACT_TTC1_CLK1_PERIPHERAL_FREQMHZ": {
+            "value": "111.111115"
+          },
+          "PCW_ACT_TTC1_CLK2_PERIPHERAL_FREQMHZ": {
+            "value": "111.111115"
+          },
+          "PCW_ACT_UART_PERIPHERAL_FREQMHZ": {
+            "value": "50.000000"
+          },
+          "PCW_ACT_WDT_PERIPHERAL_FREQMHZ": {
+            "value": "111.111115"
+          },
+          "PCW_APU_PERIPHERAL_FREQMHZ": {
+            "value": "666.666666"
+          },
+          "PCW_CAN0_CAN0_IO": {
+            "value": "MIO 46 .. 47"
+          },
+          "PCW_CAN0_GRP_CLK_ENABLE": {
+            "value": "0"
+          },
+          "PCW_CAN0_PERIPHERAL_ENABLE": {
+            "value": "1"
+          },
+          "PCW_CAN_PERIPHERAL_FREQMHZ": {
+            "value": "23.8095"
+          },
+          "PCW_CAN_PERIPHERAL_VALID": {
+            "value": "1"
+          },
+          "PCW_CLK0_FREQ": {
+            "value": "100000000"
+          },
+          "PCW_CLK1_FREQ": {
+            "value": "200000000"
+          },
+          "PCW_CLK2_FREQ": {
+            "value": "10000000"
+          },
+          "PCW_CLK3_FREQ": {
+            "value": "10000000"
+          },
+          "PCW_DDR_RAM_HIGHADDR": {
+            "value": "0x3FFFFFFF"
+          },
+          "PCW_ENET0_ENET0_IO": {
+            "value": "MIO 16 .. 27"
+          },
+          "PCW_ENET0_GRP_MDIO_ENABLE": {
+            "value": "1"
+          },
+          "PCW_ENET0_GRP_MDIO_IO": {
+            "value": "MIO 52 .. 53"
+          },
+          "PCW_ENET0_PERIPHERAL_ENABLE": {
+            "value": "1"
+          },
+          "PCW_ENET0_PERIPHERAL_FREQMHZ": {
+            "value": "100 Mbps"
+          },
+          "PCW_ENET0_RESET_ENABLE": {
+            "value": "1"
+          },
+          "PCW_ENET0_RESET_IO": {
+            "value": "MIO 11"
+          },
+          "PCW_ENET_RESET_ENABLE": {
+            "value": "1"
+          },
+          "PCW_ENET_RESET_SELECT": {
+            "value": "Share reset pin"
+          },
+          "PCW_EN_CAN0": {
+            "value": "1"
+          },
+          "PCW_EN_CLK1_PORT": {
+            "value": "1"
+          },
+          "PCW_EN_EMIO_GPIO": {
+            "value": "1"
+          },
+          "PCW_EN_EMIO_TTC0": {
+            "value": "0"
+          },
+          "PCW_EN_ENET0": {
+            "value": "1"
+          },
+          "PCW_EN_GPIO": {
+            "value": "1"
+          },
+          "PCW_EN_I2C0": {
+            "value": "1"
+          },
+          "PCW_EN_QSPI": {
+            "value": "1"
+          },
+          "PCW_EN_RST1_PORT": {
+            "value": "1"
+          },
+          "PCW_EN_SDIO0": {
+            "value": "1"
+          },
+          "PCW_EN_TTC0": {
+            "value": "0"
+          },
+          "PCW_EN_UART1": {
+            "value": "1"
+          },
+          "PCW_EN_USB0": {
+            "value": "1"
+          },
+          "PCW_FCLK_CLK1_BUF": {
+            "value": "TRUE"
+          },
+          "PCW_FPGA0_PERIPHERAL_FREQMHZ": {
+            "value": "100.0"
+          },
+          "PCW_FPGA1_PERIPHERAL_FREQMHZ": {
+            "value": "200.0"
+          },
+          "PCW_FPGA_FCLK0_ENABLE": {
+            "value": "1"
+          },
+          "PCW_FPGA_FCLK1_ENABLE": {
+            "value": "1"
+          },
+          "PCW_GPIO_EMIO_GPIO_ENABLE": {
+            "value": "1"
+          },
+          "PCW_GPIO_EMIO_GPIO_IO": {
+            "value": "32"
+          },
+          "PCW_GPIO_EMIO_GPIO_WIDTH": {
+            "value": "32"
+          },
+          "PCW_GPIO_MIO_GPIO_ENABLE": {
+            "value": "1"
+          },
+          "PCW_GPIO_MIO_GPIO_IO": {
+            "value": "MIO"
+          },
+          "PCW_I2C0_GRP_INT_ENABLE": {
+            "value": "0"
+          },
+          "PCW_I2C0_I2C0_IO": {
+            "value": "MIO 50 .. 51"
+          },
+          "PCW_I2C0_PERIPHERAL_ENABLE": {
+            "value": "1"
+          },
+          "PCW_I2C0_RESET_ENABLE": {
+            "value": "1"
+          },
+          "PCW_I2C0_RESET_IO": {
+            "value": "MIO 13"
+          },
+          "PCW_I2C_PERIPHERAL_FREQMHZ": {
+            "value": "111.111115"
+          },
+          "PCW_I2C_RESET_ENABLE": {
+            "value": "1"
+          },
+          "PCW_I2C_RESET_SELECT": {
+            "value": "Share reset pin"
+          },
+          "PCW_IRQ_F2P_INTR": {
+            "value": "1"
+          },
+          "PCW_MIO_0_IOTYPE": {
+            "value": "LVCMOS 1.8V"
+          },
+          "PCW_MIO_0_PULLUP": {
+            "value": "enabled"
+          },
+          "PCW_MIO_0_SLEW": {
+            "value": "slow"
+          },
+          "PCW_MIO_10_IOTYPE": {
+            "value": "LVCMOS 1.8V"
+          },
+          "PCW_MIO_10_PULLUP": {
+            "value": "enabled"
+          },
+          "PCW_MIO_10_SLEW": {
+            "value": "slow"
+          },
+          "PCW_MIO_11_IOTYPE": {
+            "value": "LVCMOS 1.8V"
+          },
+          "PCW_MIO_11_PULLUP": {
+            "value": "enabled"
+          },
+          "PCW_MIO_11_SLEW": {
+            "value": "slow"
+          },
+          "PCW_MIO_12_IOTYPE": {
+            "value": "LVCMOS 1.8V"
+          },
+          "PCW_MIO_12_PULLUP": {
+            "value": "enabled"
+          },
+          "PCW_MIO_12_SLEW": {
+            "value": "slow"
+          },
+          "PCW_MIO_13_IOTYPE": {
+            "value": "LVCMOS 1.8V"
+          },
+          "PCW_MIO_13_PULLUP": {
+            "value": "enabled"
+          },
+          "PCW_MIO_13_SLEW": {
+            "value": "slow"
+          },
+          "PCW_MIO_14_IOTYPE": {
+            "value": "LVCMOS 1.8V"
+          },
+          "PCW_MIO_14_PULLUP": {
+            "value": "enabled"
+          },
+          "PCW_MIO_14_SLEW": {
+            "value": "slow"
+          },
+          "PCW_MIO_15_IOTYPE": {
+            "value": "LVCMOS 1.8V"
+          },
+          "PCW_MIO_15_PULLUP": {
+            "value": "enabled"
+          },
+          "PCW_MIO_15_SLEW": {
+            "value": "slow"
+          },
+          "PCW_MIO_16_IOTYPE": {
+            "value": "HSTL 1.8V"
+          },
+          "PCW_MIO_16_PULLUP": {
+            "value": "disabled"
+          },
+          "PCW_MIO_16_SLEW": {
+            "value": "slow"
+          },
+          "PCW_MIO_17_IOTYPE": {
+            "value": "HSTL 1.8V"
+          },
+          "PCW_MIO_17_PULLUP": {
+            "value": "disabled"
+          },
+          "PCW_MIO_17_SLEW": {
+            "value": "slow"
+          },
+          "PCW_MIO_18_IOTYPE": {
+            "value": "HSTL 1.8V"
+          },
+          "PCW_MIO_18_PULLUP": {
+            "value": "disabled"
+          },
+          "PCW_MIO_18_SLEW": {
+            "value": "slow"
+          },
+          "PCW_MIO_19_IOTYPE": {
+            "value": "HSTL 1.8V"
+          },
+          "PCW_MIO_19_PULLUP": {
+            "value": "disabled"
+          },
+          "PCW_MIO_19_SLEW": {
+            "value": "slow"
+          },
+          "PCW_MIO_1_IOTYPE": {
+            "value": "LVCMOS 1.8V"
+          },
+          "PCW_MIO_1_PULLUP": {
+            "value": "enabled"
+          },
+          "PCW_MIO_1_SLEW": {
+            "value": "slow"
+          },
+          "PCW_MIO_20_IOTYPE": {
+            "value": "HSTL 1.8V"
+          },
+          "PCW_MIO_20_PULLUP": {
+            "value": "disabled"
+          },
+          "PCW_MIO_20_SLEW": {
+            "value": "slow"
+          },
+          "PCW_MIO_21_IOTYPE": {
+            "value": "HSTL 1.8V"
+          },
+          "PCW_MIO_21_PULLUP": {
+            "value": "disabled"
+          },
+          "PCW_MIO_21_SLEW": {
+            "value": "slow"
+          },
+          "PCW_MIO_22_IOTYPE": {
+            "value": "HSTL 1.8V"
+          },
+          "PCW_MIO_22_PULLUP": {
+            "value": "disabled"
+          },
+          "PCW_MIO_22_SLEW": {
+            "value": "slow"
+          },
+          "PCW_MIO_23_IOTYPE": {
+            "value": "HSTL 1.8V"
+          },
+          "PCW_MIO_23_PULLUP": {
+            "value": "disabled"
+          },
+          "PCW_MIO_23_SLEW": {
+            "value": "slow"
+          },
+          "PCW_MIO_24_IOTYPE": {
+            "value": "HSTL 1.8V"
+          },
+          "PCW_MIO_24_PULLUP": {
+            "value": "disabled"
+          },
+          "PCW_MIO_24_SLEW": {
+            "value": "slow"
+          },
+          "PCW_MIO_25_IOTYPE": {
+            "value": "HSTL 1.8V"
+          },
+          "PCW_MIO_25_PULLUP": {
+            "value": "disabled"
+          },
+          "PCW_MIO_25_SLEW": {
+            "value": "slow"
+          },
+          "PCW_MIO_26_IOTYPE": {
+            "value": "HSTL 1.8V"
+          },
+          "PCW_MIO_26_PULLUP": {
+            "value": "disabled"
+          },
+          "PCW_MIO_26_SLEW": {
+            "value": "slow"
+          },
+          "PCW_MIO_27_IOTYPE": {
+            "value": "HSTL 1.8V"
+          },
+          "PCW_MIO_27_PULLUP": {
+            "value": "disabled"
+          },
+          "PCW_MIO_27_SLEW": {
+            "value": "slow"
+          },
+          "PCW_MIO_28_IOTYPE": {
+            "value": "LVCMOS 1.8V"
+          },
+          "PCW_MIO_28_PULLUP": {
+            "value": "disabled"
+          },
+          "PCW_MIO_28_SLEW": {
+            "value": "slow"
+          },
+          "PCW_MIO_29_IOTYPE": {
+            "value": "LVCMOS 1.8V"
+          },
+          "PCW_MIO_29_PULLUP": {
+            "value": "disabled"
+          },
+          "PCW_MIO_29_SLEW": {
+            "value": "slow"
+          },
+          "PCW_MIO_2_IOTYPE": {
+            "value": "LVCMOS 1.8V"
+          },
+          "PCW_MIO_2_SLEW": {
+            "value": "slow"
+          },
+          "PCW_MIO_30_IOTYPE": {
+            "value": "LVCMOS 1.8V"
+          },
+          "PCW_MIO_30_PULLUP": {
+            "value": "disabled"
+          },
+          "PCW_MIO_30_SLEW": {
+            "value": "slow"
+          },
+          "PCW_MIO_31_IOTYPE": {
+            "value": "LVCMOS 1.8V"
+          },
+          "PCW_MIO_31_PULLUP": {
+            "value": "disabled"
+          },
+          "PCW_MIO_31_SLEW": {
+            "value": "slow"
+          },
+          "PCW_MIO_32_IOTYPE": {
+            "value": "LVCMOS 1.8V"
+          },
+          "PCW_MIO_32_PULLUP": {
+            "value": "disabled"
+          },
+          "PCW_MIO_32_SLEW": {
+            "value": "slow"
+          },
+          "PCW_MIO_33_IOTYPE": {
+            "value": "LVCMOS 1.8V"
+          },
+          "PCW_MIO_33_PULLUP": {
+            "value": "disabled"
+          },
+          "PCW_MIO_33_SLEW": {
+            "value": "slow"
+          },
+          "PCW_MIO_34_IOTYPE": {
+            "value": "LVCMOS 1.8V"
+          },
+          "PCW_MIO_34_PULLUP": {
+            "value": "disabled"
+          },
+          "PCW_MIO_34_SLEW": {
+            "value": "slow"
+          },
+          "PCW_MIO_35_IOTYPE": {
+            "value": "LVCMOS 1.8V"
+          },
+          "PCW_MIO_35_PULLUP": {
+            "value": "disabled"
+          },
+          "PCW_MIO_35_SLEW": {
+            "value": "slow"
+          },
+          "PCW_MIO_36_IOTYPE": {
+            "value": "LVCMOS 1.8V"
+          },
+          "PCW_MIO_36_PULLUP": {
+            "value": "disabled"
+          },
+          "PCW_MIO_36_SLEW": {
+            "value": "slow"
+          },
+          "PCW_MIO_37_IOTYPE": {
+            "value": "LVCMOS 1.8V"
+          },
+          "PCW_MIO_37_PULLUP": {
+            "value": "disabled"
+          },
+          "PCW_MIO_37_SLEW": {
+            "value": "slow"
+          },
+          "PCW_MIO_38_IOTYPE": {
+            "value": "LVCMOS 1.8V"
+          },
+          "PCW_MIO_38_PULLUP": {
+            "value": "disabled"
+          },
+          "PCW_MIO_38_SLEW": {
+            "value": "slow"
+          },
+          "PCW_MIO_39_IOTYPE": {
+            "value": "LVCMOS 1.8V"
+          },
+          "PCW_MIO_39_PULLUP": {
+            "value": "disabled"
+          },
+          "PCW_MIO_39_SLEW": {
+            "value": "slow"
+          },
+          "PCW_MIO_3_IOTYPE": {
+            "value": "LVCMOS 1.8V"
+          },
+          "PCW_MIO_3_SLEW": {
+            "value": "slow"
+          },
+          "PCW_MIO_40_IOTYPE": {
+            "value": "LVCMOS 1.8V"
+          },
+          "PCW_MIO_40_PULLUP": {
+            "value": "disabled"
+          },
+          "PCW_MIO_40_SLEW": {
+            "value": "slow"
+          },
+          "PCW_MIO_41_IOTYPE": {
+            "value": "LVCMOS 1.8V"
+          },
+          "PCW_MIO_41_PULLUP": {
+            "value": "disabled"
+          },
+          "PCW_MIO_41_SLEW": {
+            "value": "slow"
+          },
+          "PCW_MIO_42_IOTYPE": {
+            "value": "LVCMOS 1.8V"
+          },
+          "PCW_MIO_42_PULLUP": {
+            "value": "disabled"
+          },
+          "PCW_MIO_42_SLEW": {
+            "value": "slow"
+          },
+          "PCW_MIO_43_IOTYPE": {
+            "value": "LVCMOS 1.8V"
+          },
+          "PCW_MIO_43_PULLUP": {
+            "value": "disabled"
+          },
+          "PCW_MIO_43_SLEW": {
+            "value": "slow"
+          },
+          "PCW_MIO_44_IOTYPE": {
+            "value": "LVCMOS 1.8V"
+          },
+          "PCW_MIO_44_PULLUP": {
+            "value": "disabled"
+          },
+          "PCW_MIO_44_SLEW": {
+            "value": "slow"
+          },
+          "PCW_MIO_45_IOTYPE": {
+            "value": "LVCMOS 1.8V"
+          },
+          "PCW_MIO_45_PULLUP": {
+            "value": "disabled"
+          },
+          "PCW_MIO_45_SLEW": {
+            "value": "slow"
+          },
+          "PCW_MIO_46_IOTYPE": {
+            "value": "LVCMOS 1.8V"
+          },
+          "PCW_MIO_46_PULLUP": {
+            "value": "enabled"
+          },
+          "PCW_MIO_46_SLEW": {
+            "value": "slow"
+          },
+          "PCW_MIO_47_IOTYPE": {
+            "value": "LVCMOS 1.8V"
+          },
+          "PCW_MIO_47_PULLUP": {
+            "value": "enabled"
+          },
+          "PCW_MIO_47_SLEW": {
+            "value": "slow"
+          },
+          "PCW_MIO_48_IOTYPE": {
+            "value": "LVCMOS 1.8V"
+          },
+          "PCW_MIO_48_PULLUP": {
+            "value": "disabled"
+          },
+          "PCW_MIO_48_SLEW": {
+            "value": "slow"
+          },
+          "PCW_MIO_49_IOTYPE": {
+            "value": "LVCMOS 1.8V"
+          },
+          "PCW_MIO_49_PULLUP": {
+            "value": "disabled"
+          },
+          "PCW_MIO_49_SLEW": {
+            "value": "slow"
+          },
+          "PCW_MIO_4_IOTYPE": {
+            "value": "LVCMOS 1.8V"
+          },
+          "PCW_MIO_4_SLEW": {
+            "value": "slow"
+          },
+          "PCW_MIO_50_IOTYPE": {
+            "value": "LVCMOS 1.8V"
+          },
+          "PCW_MIO_50_PULLUP": {
+            "value": "enabled"
+          },
+          "PCW_MIO_50_SLEW": {
+            "value": "slow"
+          },
+          "PCW_MIO_51_IOTYPE": {
+            "value": "LVCMOS 1.8V"
+          },
+          "PCW_MIO_51_PULLUP": {
+            "value": "enabled"
+          },
+          "PCW_MIO_51_SLEW": {
+            "value": "slow"
+          },
+          "PCW_MIO_52_IOTYPE": {
+            "value": "LVCMOS 1.8V"
+          },
+          "PCW_MIO_52_PULLUP": {
+            "value": "disabled"
+          },
+          "PCW_MIO_52_SLEW": {
+            "value": "slow"
+          },
+          "PCW_MIO_53_IOTYPE": {
+            "value": "LVCMOS 1.8V"
+          },
+          "PCW_MIO_53_PULLUP": {
+            "value": "disabled"
+          },
+          "PCW_MIO_53_SLEW": {
+            "value": "slow"
+          },
+          "PCW_MIO_5_IOTYPE": {
+            "value": "LVCMOS 1.8V"
+          },
+          "PCW_MIO_5_SLEW": {
+            "value": "slow"
+          },
+          "PCW_MIO_6_IOTYPE": {
+            "value": "LVCMOS 1.8V"
+          },
+          "PCW_MIO_6_SLEW": {
+            "value": "slow"
+          },
+          "PCW_MIO_7_IOTYPE": {
+            "value": "LVCMOS 1.8V"
+          },
+          "PCW_MIO_7_SLEW": {
+            "value": "slow"
+          },
+          "PCW_MIO_8_IOTYPE": {
+            "value": "LVCMOS 1.8V"
+          },
+          "PCW_MIO_8_SLEW": {
+            "value": "slow"
+          },
+          "PCW_MIO_9_IOTYPE": {
+            "value": "LVCMOS 1.8V"
+          },
+          "PCW_MIO_9_PULLUP": {
+            "value": "enabled"
+          },
+          "PCW_MIO_9_SLEW": {
+            "value": "slow"
+          },
+          "PCW_MIO_TREE_PERIPHERALS": {
+            "value": "SD 0#Quad SPI Flash#Quad SPI Flash#Quad SPI Flash#Quad SPI Flash#Quad SPI Flash#Quad SPI Flash#USB Reset#Quad SPI Flash#GPIO#GPIO#ENET Reset#GPIO#I2C Reset#GPIO#SD 0#Enet 0#Enet 0#Enet 0#Enet 0#Enet 0#Enet 0#Enet 0#Enet 0#Enet 0#Enet 0#Enet 0#Enet 0#USB 0#USB 0#USB 0#USB 0#USB 0#USB 0#USB 0#USB 0#USB 0#USB 0#USB 0#USB 0#SD 0#SD 0#SD 0#SD 0#SD 0#SD 0#CAN 0#CAN 0#UART 1#UART 1#I2C 0#I2C 0#Enet 0#Enet 0"
+          },
+          "PCW_MIO_TREE_SIGNALS": {
+            "value": "cd#qspi0_ss_b#qspi0_io[0]#qspi0_io[1]#qspi0_io[2]#qspi0_io[3]/HOLD_B#qspi0_sclk#reset#qspi_fbclk#gpio[9]#gpio[10]#reset#gpio[12]#reset#gpio[14]#wp#tx_clk#txd[0]#txd[1]#txd[2]#txd[3]#tx_ctl#rx_clk#rxd[0]#rxd[1]#rxd[2]#rxd[3]#rx_ctl#data[4]#dir#stp#nxt#data[0]#data[1]#data[2]#data[3]#clk#data[5]#data[6]#data[7]#clk#cmd#data[0]#data[1]#data[2]#data[3]#rx#tx#tx#rx#scl#sda#mdc#mdio"
+          },
+          "PCW_PJTAG_PERIPHERAL_ENABLE": {
+            "value": "0"
+          },
+          "PCW_PRESET_BANK0_VOLTAGE": {
+            "value": "LVCMOS 1.8V"
+          },
+          "PCW_PRESET_BANK1_VOLTAGE": {
+            "value": "LVCMOS 1.8V"
+          },
+          "PCW_QSPI_GRP_FBCLK_ENABLE": {
+            "value": "1"
+          },
+          "PCW_QSPI_GRP_FBCLK_IO": {
+            "value": "MIO 8"
+          },
+          "PCW_QSPI_GRP_IO1_ENABLE": {
+            "value": "0"
+          },
+          "PCW_QSPI_GRP_SINGLE_SS_ENABLE": {
+            "value": "1"
+          },
+          "PCW_QSPI_GRP_SINGLE_SS_IO": {
+            "value": "MIO 1 .. 6"
+          },
+          "PCW_QSPI_GRP_SS1_ENABLE": {
+            "value": "0"
+          },
+          "PCW_QSPI_PERIPHERAL_ENABLE": {
+            "value": "1"
+          },
+          "PCW_QSPI_PERIPHERAL_FREQMHZ": {
+            "value": "200"
+          },
+          "PCW_QSPI_QSPI_IO": {
+            "value": "MIO 1 .. 6"
+          },
+          "PCW_SD0_GRP_CD_ENABLE": {
+            "value": "1"
+          },
+          "PCW_SD0_GRP_CD_IO": {
+            "value": "MIO 0"
+          },
+          "PCW_SD0_GRP_POW_ENABLE": {
+            "value": "0"
+          },
+          "PCW_SD0_GRP_WP_ENABLE": {
+            "value": "1"
+          },
+          "PCW_SD0_GRP_WP_IO": {
+            "value": "MIO 15"
+          },
+          "PCW_SD0_PERIPHERAL_ENABLE": {
+            "value": "1"
+          },
+          "PCW_SD0_SD0_IO": {
+            "value": "MIO 40 .. 45"
+          },
+          "PCW_SDIO_PERIPHERAL_FREQMHZ": {
+            "value": "50"
+          },
+          "PCW_SDIO_PERIPHERAL_VALID": {
+            "value": "1"
+          },
+          "PCW_SINGLE_QSPI_DATA_MODE": {
+            "value": "x4"
+          },
+          "PCW_TTC0_PERIPHERAL_ENABLE": {
+            "value": "0"
+          },
+          "PCW_UART1_GRP_FULL_ENABLE": {
+            "value": "0"
+          },
+          "PCW_UART1_PERIPHERAL_ENABLE": {
+            "value": "1"
+          },
+          "PCW_UART1_UART1_IO": {
+            "value": "MIO 48 .. 49"
+          },
+          "PCW_UART_PERIPHERAL_FREQMHZ": {
+            "value": "50"
+          },
+          "PCW_UART_PERIPHERAL_VALID": {
+            "value": "1"
+          },
+          "PCW_UIPARAM_ACT_DDR_FREQ_MHZ": {
+            "value": "533.333374"
+          },
+          "PCW_UIPARAM_DDR_BL": {
+            "value": "8"
+          },
+          "PCW_UIPARAM_DDR_BOARD_DELAY0": {
+            "value": "0.537"
+          },
+          "PCW_UIPARAM_DDR_BOARD_DELAY1": {
+            "value": "0.442"
+          },
+          "PCW_UIPARAM_DDR_BOARD_DELAY2": {
+            "value": "0.464"
+          },
+          "PCW_UIPARAM_DDR_BOARD_DELAY3": {
+            "value": "0.521"
+          },
+          "PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0": {
+            "value": "0.217"
+          },
+          "PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1": {
+            "value": "0.133"
+          },
+          "PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2": {
+            "value": "0.089"
+          },
+          "PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3": {
+            "value": "0.248"
+          },
+          "PCW_UIPARAM_DDR_FREQ_MHZ": {
+            "value": "533.333333"
+          },
+          "PCW_UIPARAM_DDR_MEMORY_TYPE": {
+            "value": "DDR 3"
+          },
+          "PCW_UIPARAM_DDR_PARTNO": {
+            "value": "MT41J256M8 HX-15E"
+          },
+          "PCW_UIPARAM_DDR_TRAIN_DATA_EYE": {
+            "value": "1"
+          },
+          "PCW_UIPARAM_DDR_TRAIN_READ_GATE": {
+            "value": "1"
+          },
+          "PCW_UIPARAM_DDR_TRAIN_WRITE_LEVEL": {
+            "value": "1"
+          },
+          "PCW_UIPARAM_DDR_USE_INTERNAL_VREF": {
+            "value": "1"
+          },
+          "PCW_USB0_PERIPHERAL_ENABLE": {
+            "value": "1"
+          },
+          "PCW_USB0_RESET_ENABLE": {
+            "value": "1"
+          },
+          "PCW_USB0_RESET_IO": {
+            "value": "MIO 7"
+          },
+          "PCW_USB0_USB0_IO": {
+            "value": "MIO 28 .. 39"
+          },
+          "PCW_USB_RESET_ENABLE": {
+            "value": "1"
+          },
+          "PCW_USB_RESET_SELECT": {
+            "value": "Share reset pin"
+          },
+          "PCW_USE_FABRIC_INTERRUPT": {
+            "value": "1"
+          },
+          "PCW_USE_M_AXI_GP0": {
+            "value": "1"
+          },
+          "preset": {
+            "value": "ZC702"
+          }
+        }
+      },
+      "Subsystem_ip_0": {
+        "vlnv": "xilinx.com:ip:Subsystem_ip:1.0",
+        "xci_name": "system_top_Subsystem_ip_0_0"
+      }
+    },
+    "interface_nets": {
+      "sys_cpu_DDR": {
+        "interface_ports": [
+          "DDR",
+          "sys_cpu/DDR"
+        ]
+      },
+      "sys_cpu_FIXED_IO": {
+        "interface_ports": [
+          "FIXED_IO",
+          "sys_cpu/FIXED_IO"
+        ]
+      },
+      "axi_cpu_interconnect_s00_axi": {
+        "interface_ports": [
+          "axi_cpu_interconnect/S00_AXI",
+          "sys_cpu/M_AXI_GP0"
+        ]
+      },
+      "axi_cpu_interconnect_M00_AXI": {
+        "interface_ports": [
+          "Subsystem_ip_0/AXI4_Lite",
+          "axi_cpu_interconnect/M00_AXI"
+        ]
+      }
+    },
+    "nets": {
+      "const_intr_concat_gnd": {
+        "ports": [
+          "const_intr_concat_gnd/dout",
+          "intr_concat/In0",
+          "intr_concat/In1",
+          "intr_concat/In2",
+          "intr_concat/In3",
+          "intr_concat/In4",
+          "intr_concat/In5",
+          "intr_concat/In6",
+          "intr_concat/In7",
+          "intr_concat/In8",
+          "intr_concat/In9",
+          "intr_concat/In10",
+          "intr_concat/In11",
+          "intr_concat/In12",
+          "intr_concat/In13",
+          "intr_concat/In14",
+          "intr_concat/In15"
+        ]
+      },
+      "core_clkwiz_locked_net": {
+        "ports": [
+          "core_clkwiz/locked",
+          "sys_core_rstgen/dcm_locked"
+        ]
+      },
+      "intr_concat_dout": {
+        "ports": [
+          "intr_concat/dout",
+          "sys_cpu/IRQ_F2P"
+        ]
+      },
+      "proc_100m_resetn": {
+        "ports": [
+          "sys_cpu/FCLK_RESET0_N",
+          "core_clkwiz/resetn",
+          "sys_100m_rstgen/ext_reset_in",
+          "sys_core_rstgen/ext_reset_in"
+        ]
+      },
+      "sys_100m_clk": {
+        "ports": [
+          "sys_cpu/FCLK_CLK0",
+          "axi_cpu_interconnect/ACLK",
+          "axi_cpu_interconnect/S00_ACLK",
+          "core_clkwiz/clk_in1",
+          "sys_100m_rstgen/slowest_sync_clk",
+          "sys_cpu/M_AXI_GP0_ACLK"
+        ]
+      },
+      "sys_100m_resetn": {
+        "ports": [
+          "sys_100m_rstgen/peripheral_aresetn",
+          "axi_cpu_interconnect/ARESETN",
+          "axi_cpu_interconnect/S00_ARESETN"
+        ]
+      },
+      "sys_core_clk": {
+        "ports": [
+          "core_clkwiz/clk_out1",
+          "axi_cpu_interconnect/M00_ACLK",
+          "sys_core_rstgen/slowest_sync_clk",
+          "Subsystem_ip_0/AXI4_Lite_ACLK",
+          "Subsystem_ip_0/IPCORE_CLK"
+        ]
+      },
+      "sys_core_resetn": {
+        "ports": [
+          "sys_core_rstgen/peripheral_aresetn",
+          "axi_cpu_interconnect/M00_ARESETN",
+          "Subsystem_ip_0/AXI4_Lite_ARESETN",
+          "Subsystem_ip_0/IPCORE_RESETN"
+        ]
+      }
+    },
+    "addressing": {
+      "/sys_cpu": {
+        "address_spaces": {
+          "Data": {
+            "range": "4G",
+            "width": "32",
+            "segments": {
+              "SEG_Subsystem_ip_0_reg0": {
+                "address_block": "/Subsystem_ip_0/AXI4_Lite/reg0",
+                "offset": "0x40010000",
+                "range": "64K"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

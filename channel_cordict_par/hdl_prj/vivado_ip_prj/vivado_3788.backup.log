@@ -1,0 +1,44 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Apr 25 13:22:03 2023
+# Process ID: 3788
+# Current directory: E:/Desktop/ingProject/Simulink_prj/RWR_to_zynq/channel_cordict_par_test_4_24/hdl_prj/vivado_ip_prj
+# Command line: vivado.exe -mode batch -notrace -source vivado_insert_ip.tcl
+# Log file: E:/Desktop/ingProject/Simulink_prj/RWR_to_zynq/channel_cordict_par_test_4_24/hdl_prj/vivado_ip_prj/vivado.log
+# Journal file: E:/Desktop/ingProject/Simulink_prj/RWR_to_zynq/channel_cordict_par_test_4_24/hdl_prj/vivado_ip_prj\vivado.jou
+#-----------------------------------------------------------
+source vivado_insert_ip.tcl -notrace
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'E:/Desktop/ingProject/Simulink_prj/RWR_to_zynq/channel_cordict_par_test_4_24/hdl_prj/vivado_ip_prj'
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/Desktop/ingProject/Simulink_prj/RWR_to_zynq/channel_cordict_par_test_4_24/hdl_prj/vivado_ip_prj/ipcore'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/vivado2019/Vivado/2019.1/data/ip'.
+INFO: [IP_Flow 19-949] Unzipped './ipcore/Subsystem_ip_v1_0.zip' into repository 'e:/Desktop/ingProject/Simulink_prj/RWR_to_zynq/channel_cordict_par_test_4_24/hdl_prj/vivado_ip_prj/ipcore'.
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'e:/Desktop/ingProject/Simulink_prj/RWR_to_zynq/channel_cordict_par_test_4_24/hdl_prj/vivado_ip_prj/ipcore'
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_cpu_interconnect
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - s00_regslice
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - const_intr_concat_gnd
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - core_clkwiz
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - intr_concat
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - sys_100m_rstgen
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - sys_core_rstgen
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - sys_cpu
+Successfully read diagram <system_top> from BD file <E:/Desktop/ingProject/Simulink_prj/RWR_to_zynq/channel_cordict_par_test_4_24/hdl_prj/vivado_ip_prj/vivado_prj.srcs/sources_1/bd/system_top/system_top.bd>
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+WARNING: [BD 41-927] Following properties on pin /Subsystem_ip_0/IPCORE_CLK have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=/core_clkwiz_clk_out1 
+WARNING: [BD 41-927] Following properties on pin /Subsystem_ip_0/AXI4_Lite_ACLK have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=/core_clkwiz_clk_out1 
+Wrote  : <E:\Desktop\ingProject\Simulink_prj\RWR_to_zynq\channel_cordict_par_test_4_24\hdl_prj\vivado_ip_prj\vivado_prj.srcs\sources_1\bd\system_top\system_top.bd> 
+VHDL Output written to : E:/Desktop/ingProject/Simulink_prj/RWR_to_zynq/channel_cordict_par_test_4_24/hdl_prj/vivado_ip_prj/vivado_prj.srcs/sources_1/bd/system_top/synth/system_top.vhd
+VHDL Output written to : E:/Desktop/ingProject/Simulink_prj/RWR_to_zynq/channel_cordict_par_test_4_24/hdl_prj/vivado_ip_prj/vivado_prj.srcs/sources_1/bd/system_top/sim/system_top.vhd
+VHDL Output written to : E:/Desktop/ingProject/Simulink_prj/RWR_to_zynq/channel_cordict_par_test_4_24/hdl_prj/vivado_ip_prj/vivado_prj.srcs/sources_1/bd/system_top/hdl/system_top_wrapper.vhd
+make_wrapper: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 751.266 ; gain = 326.172
+INFO: [BD 5-320] Validate design is not run, since the design is already validated.
+INFO: [Common 17-206] Exiting Vivado at Tue Apr 25 13:22:17 2023...

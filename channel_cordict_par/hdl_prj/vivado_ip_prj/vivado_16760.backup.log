@@ -1,0 +1,54 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Apr 25 13:23:04 2023
+# Process ID: 16760
+# Current directory: E:/Desktop/ingProject/Simulink_prj/RWR_to_zynq/channel_cordict_par_test_4_24/hdl_prj/vivado_ip_prj
+# Command line: vivado.exe -mode batch -notrace -source vivado_build.tcl
+# Log file: E:/Desktop/ingProject/Simulink_prj/RWR_to_zynq/channel_cordict_par_test_4_24/hdl_prj/vivado_ip_prj/vivado.log
+# Journal file: E:/Desktop/ingProject/Simulink_prj/RWR_to_zynq/channel_cordict_par_test_4_24/hdl_prj/vivado_ip_prj\vivado.jou
+#-----------------------------------------------------------
+source vivado_build.tcl -notrace
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'E:/Desktop/ingProject/Simulink_prj/RWR_to_zynq/channel_cordict_par_test_4_24/hdl_prj/vivado_ip_prj'
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/Desktop/ingProject/Simulink_prj/RWR_to_zynq/channel_cordict_par_test_4_24/hdl_prj/vivado_ip_prj/ipcore'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/vivado2019/Vivado/2019.1/data/ip'.
+INFO: [BD 41-1662] The design 'system_top.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : E:/Desktop/ingProject/Simulink_prj/RWR_to_zynq/channel_cordict_par_test_4_24/hdl_prj/vivado_ip_prj/vivado_prj.srcs/sources_1/bd/system_top/synth/system_top.vhd
+VHDL Output written to : E:/Desktop/ingProject/Simulink_prj/RWR_to_zynq/channel_cordict_par_test_4_24/hdl_prj/vivado_ip_prj/vivado_prj.srcs/sources_1/bd/system_top/sim/system_top.vhd
+VHDL Output written to : E:/Desktop/ingProject/Simulink_prj/RWR_to_zynq/channel_cordict_par_test_4_24/hdl_prj/vivado_ip_prj/vivado_prj.srcs/sources_1/bd/system_top/hdl/system_top_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block const_intr_concat_gnd .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block core_clkwiz .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block intr_concat .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block sys_100m_rstgen .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block sys_core_rstgen .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block sys_cpu .
+WARNING: [IP_Flow 19-5378] Port width mismatch for bus parameter 'M_AXI.AWUSER_WIDTH'. Logical port width '0' and physical port width '1' do not match.
+WARNING: [IP_Flow 19-5378] Port width mismatch for bus parameter 'M_AXI.WUSER_WIDTH'. Logical port width '0' and physical port width '1' do not match.
+WARNING: [IP_Flow 19-5378] Port width mismatch for bus parameter 'M_AXI.BUSER_WIDTH'. Logical port width '0' and physical port width '1' do not match.
+WARNING: [IP_Flow 19-5378] Port width mismatch for bus parameter 'M_AXI.ARUSER_WIDTH'. Logical port width '0' and physical port width '1' do not match.
+WARNING: [IP_Flow 19-5378] Port width mismatch for bus parameter 'M_AXI.RUSER_WIDTH'. Logical port width '0' and physical port width '1' do not match.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-5378] Port width mismatch for bus parameter 'S_AXI.AWUSER_WIDTH'. Logical port width '0' and physical port width '1' do not match.
+WARNING: [IP_Flow 19-5378] Port width mismatch for bus parameter 'S_AXI.WUSER_WIDTH'. Logical port width '0' and physical port width '1' do not match.
+WARNING: [IP_Flow 19-5378] Port width mismatch for bus parameter 'S_AXI.BUSER_WIDTH'. Logical port width '0' and physical port width '1' do not match.
+WARNING: [IP_Flow 19-5378] Port width mismatch for bus parameter 'S_AXI.ARUSER_WIDTH'. Logical port width '0' and physical port width '1' do not match.
+WARNING: [IP_Flow 19-5378] Port width mismatch for bus parameter 'S_AXI.RUSER_WIDTH'. Logical port width '0' and physical port width '1' do not match.
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_cpu_interconnect/s00_couplers/s00_regslice .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'e:/Desktop/ingProject/Simulink_prj/RWR_to_zynq/channel_cordict_par_test_4_24/hdl_prj/vivado_ip_prj/vivado_prj.srcs/sources_1/bd/system_top/ip/system_top_auto_cc_0/system_top_auto_cc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_cpu_interconnect/s00_couplers/auto_cc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'e:/Desktop/ingProject/Simulink_prj/RWR_to_zynq/channel_cordict_par_test_4_24/hdl_prj/vivado_ip_prj/vivado_prj.srcs/sources_1/bd/system_top/ip/system_top_auto_pc_0/system_top_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_cpu_interconnect/s00_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Subsystem_ip_0 .
+Exporting to file E:/Desktop/ingProject/Simulink_prj/RWR_to_zynq/channel_cordict_par_test_4_24/hdl_prj/vivado_ip_prj/vivado_prj.srcs/sources_1/bd/system_top/hw_handoff/system_top.hwh
+Generated Block Design Tcl file E:/Desktop/ingProject/Simulink_prj/RWR_to_zynq/channel_cordict_par_test_4_24/hdl_prj/vivado_ip_prj/vivado_prj.srcs/sources_1/bd/system_top/hw_handoff/system_top_bd.tcl
+Generated Hardware Definition File E:/Desktop/ingProject/Simulink_prj/RWR_to_zynq/channel_cordict_par_test_4_24/hdl_prj/vivado_ip_prj/vivado_prj.srcs/sources_1/bd/system_top/synth/system_top.hwdef
+[Tue Apr 25 13:23:38 2023] Launched synth_1...
+Run output will be captured here: E:/Desktop/ingProject/Simulink_prj/RWR_to_zynq/channel_cordict_par_test_4_24/hdl_prj/vivado_ip_prj/vivado_prj.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:05 ; elapsed = 00:00:27 . Memory (MB): peak = 623.781 ; gain = 235.137
+[Tue Apr 25 13:23:38 2023] Waiting for synth_1 to finish...

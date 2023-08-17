@@ -1,0 +1,694 @@
+
+*** Running vivado
+    with args -log system_top_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source system_top_wrapper.tcl -notrace
+
+
+****** Vivado v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source system_top_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/Desktop/ingProject/Simulink_prj/RWR_to_zynq/channel_cordict_par_test_4_24/hdl_prj/vivado_ip_prj/ipcore'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/vivado2019/Vivado/2019.1/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is E:/Desktop/ingProject/Simulink_prj/RWR_to_zynq/channel_cordict_par_test_4_24/hdl_prj/vivado_ip_prj/vivado_prj.cache/ip 
+Command: link_design -top system_top_wrapper -part xc7z020clg484-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Netlist 29-17] Analyzing 6111 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [e:/Desktop/ingProject/Simulink_prj/RWR_to_zynq/channel_cordict_par_test_4_24/hdl_prj/vivado_ip_prj/vivado_prj.srcs/sources_1/bd/system_top/ip/system_top_core_clkwiz_0/system_top_core_clkwiz_0_board.xdc] for cell 'system_top_i/core_clkwiz/inst'
+Finished Parsing XDC File [e:/Desktop/ingProject/Simulink_prj/RWR_to_zynq/channel_cordict_par_test_4_24/hdl_prj/vivado_ip_prj/vivado_prj.srcs/sources_1/bd/system_top/ip/system_top_core_clkwiz_0/system_top_core_clkwiz_0_board.xdc] for cell 'system_top_i/core_clkwiz/inst'
+Parsing XDC File [e:/Desktop/ingProject/Simulink_prj/RWR_to_zynq/channel_cordict_par_test_4_24/hdl_prj/vivado_ip_prj/vivado_prj.srcs/sources_1/bd/system_top/ip/system_top_core_clkwiz_0/system_top_core_clkwiz_0.xdc] for cell 'system_top_i/core_clkwiz/inst'
+Finished Parsing XDC File [e:/Desktop/ingProject/Simulink_prj/RWR_to_zynq/channel_cordict_par_test_4_24/hdl_prj/vivado_ip_prj/vivado_prj.srcs/sources_1/bd/system_top/ip/system_top_core_clkwiz_0/system_top_core_clkwiz_0.xdc] for cell 'system_top_i/core_clkwiz/inst'
+Parsing XDC File [e:/Desktop/ingProject/Simulink_prj/RWR_to_zynq/channel_cordict_par_test_4_24/hdl_prj/vivado_ip_prj/vivado_prj.srcs/sources_1/bd/system_top/ip/system_top_sys_100m_rstgen_0/system_top_sys_100m_rstgen_0_board.xdc] for cell 'system_top_i/sys_100m_rstgen/U0'
+Finished Parsing XDC File [e:/Desktop/ingProject/Simulink_prj/RWR_to_zynq/channel_cordict_par_test_4_24/hdl_prj/vivado_ip_prj/vivado_prj.srcs/sources_1/bd/system_top/ip/system_top_sys_100m_rstgen_0/system_top_sys_100m_rstgen_0_board.xdc] for cell 'system_top_i/sys_100m_rstgen/U0'
+Parsing XDC File [e:/Desktop/ingProject/Simulink_prj/RWR_to_zynq/channel_cordict_par_test_4_24/hdl_prj/vivado_ip_prj/vivado_prj.srcs/sources_1/bd/system_top/ip/system_top_sys_100m_rstgen_0/system_top_sys_100m_rstgen_0.xdc] for cell 'system_top_i/sys_100m_rstgen/U0'
+Finished Parsing XDC File [e:/Desktop/ingProject/Simulink_prj/RWR_to_zynq/channel_cordict_par_test_4_24/hdl_prj/vivado_ip_prj/vivado_prj.srcs/sources_1/bd/system_top/ip/system_top_sys_100m_rstgen_0/system_top_sys_100m_rstgen_0.xdc] for cell 'system_top_i/sys_100m_rstgen/U0'
+Parsing XDC File [e:/Desktop/ingProject/Simulink_prj/RWR_to_zynq/channel_cordict_par_test_4_24/hdl_prj/vivado_ip_prj/vivado_prj.srcs/sources_1/bd/system_top/ip/system_top_sys_core_rstgen_0/system_top_sys_core_rstgen_0_board.xdc] for cell 'system_top_i/sys_core_rstgen/U0'
+Finished Parsing XDC File [e:/Desktop/ingProject/Simulink_prj/RWR_to_zynq/channel_cordict_par_test_4_24/hdl_prj/vivado_ip_prj/vivado_prj.srcs/sources_1/bd/system_top/ip/system_top_sys_core_rstgen_0/system_top_sys_core_rstgen_0_board.xdc] for cell 'system_top_i/sys_core_rstgen/U0'
+Parsing XDC File [e:/Desktop/ingProject/Simulink_prj/RWR_to_zynq/channel_cordict_par_test_4_24/hdl_prj/vivado_ip_prj/vivado_prj.srcs/sources_1/bd/system_top/ip/system_top_sys_core_rstgen_0/system_top_sys_core_rstgen_0.xdc] for cell 'system_top_i/sys_core_rstgen/U0'
+Finished Parsing XDC File [e:/Desktop/ingProject/Simulink_prj/RWR_to_zynq/channel_cordict_par_test_4_24/hdl_prj/vivado_ip_prj/vivado_prj.srcs/sources_1/bd/system_top/ip/system_top_sys_core_rstgen_0/system_top_sys_core_rstgen_0.xdc] for cell 'system_top_i/sys_core_rstgen/U0'
+Parsing XDC File [e:/Desktop/ingProject/Simulink_prj/RWR_to_zynq/channel_cordict_par_test_4_24/hdl_prj/vivado_ip_prj/vivado_prj.srcs/sources_1/bd/system_top/ip/system_top_sys_cpu_0/system_top_sys_cpu_0.xdc] for cell 'system_top_i/sys_cpu/inst'
+Finished Parsing XDC File [e:/Desktop/ingProject/Simulink_prj/RWR_to_zynq/channel_cordict_par_test_4_24/hdl_prj/vivado_ip_prj/vivado_prj.srcs/sources_1/bd/system_top/ip/system_top_sys_cpu_0/system_top_sys_cpu_0.xdc] for cell 'system_top_i/sys_cpu/inst'
+Parsing XDC File [e:/Desktop/ingProject/Simulink_prj/RWR_to_zynq/channel_cordict_par_test_4_24/hdl_prj/vivado_ip_prj/vivado_prj.srcs/sources_1/bd/system_top/ip/system_top_s00_regslice_0/system_top_s00_regslice_0_clocks.xdc] for cell 'system_top_i/axi_cpu_interconnect/s00_couplers/s00_regslice/inst'
+Finished Parsing XDC File [e:/Desktop/ingProject/Simulink_prj/RWR_to_zynq/channel_cordict_par_test_4_24/hdl_prj/vivado_ip_prj/vivado_prj.srcs/sources_1/bd/system_top/ip/system_top_s00_regslice_0/system_top_s00_regslice_0_clocks.xdc] for cell 'system_top_i/axi_cpu_interconnect/s00_couplers/s00_regslice/inst'
+Parsing XDC File [e:/Desktop/ingProject/Simulink_prj/RWR_to_zynq/channel_cordict_par_test_4_24/hdl_prj/vivado_ip_prj/vivado_prj.srcs/sources_1/bd/system_top/ip/system_top_auto_cc_0/system_top_auto_cc_0_clocks.xdc] for cell 'system_top_i/axi_cpu_interconnect/s00_couplers/auto_cc/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [e:/Desktop/ingProject/Simulink_prj/RWR_to_zynq/channel_cordict_par_test_4_24/hdl_prj/vivado_ip_prj/vivado_prj.srcs/sources_1/bd/system_top/ip/system_top_auto_cc_0/system_top_auto_cc_0_clocks.xdc:16]
+INFO: [Timing 38-2] Deriving generated clocks [e:/Desktop/ingProject/Simulink_prj/RWR_to_zynq/channel_cordict_par_test_4_24/hdl_prj/vivado_ip_prj/vivado_prj.srcs/sources_1/bd/system_top/ip/system_top_auto_cc_0/system_top_auto_cc_0_clocks.xdc:16]
+all_fanout: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1637.797 ; gain = 638.148
+Finished Parsing XDC File [e:/Desktop/ingProject/Simulink_prj/RWR_to_zynq/channel_cordict_par_test_4_24/hdl_prj/vivado_ip_prj/vivado_prj.srcs/sources_1/bd/system_top/ip/system_top_auto_cc_0/system_top_auto_cc_0_clocks.xdc] for cell 'system_top_i/axi_cpu_interconnect/s00_couplers/auto_cc/inst'
+Sourcing Tcl File [D:/Xilinx/vivado2019/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'system_top_i/axi_cpu_interconnect/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst'
+Finished Sourcing Tcl File [D:/Xilinx/vivado2019/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'system_top_i/axi_cpu_interconnect/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst'
+Sourcing Tcl File [D:/Xilinx/vivado2019/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'system_top_i/axi_cpu_interconnect/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst'
+Finished Sourcing Tcl File [D:/Xilinx/vivado2019/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'system_top_i/axi_cpu_interconnect/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst'
+Sourcing Tcl File [D:/Xilinx/vivado2019/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'system_top_i/axi_cpu_interconnect/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [D:/Xilinx/vivado2019/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'system_top_i/axi_cpu_interconnect/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [D:/Xilinx/vivado2019/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'system_top_i/axi_cpu_interconnect/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst'
+Finished Sourcing Tcl File [D:/Xilinx/vivado2019/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'system_top_i/axi_cpu_interconnect/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst'
+Sourcing Tcl File [D:/Xilinx/vivado2019/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'system_top_i/axi_cpu_interconnect/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [D:/Xilinx/vivado2019/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'system_top_i/axi_cpu_interconnect/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [D:/Xilinx/vivado2019/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'system_top_i/axi_cpu_interconnect/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [D:/Xilinx/vivado2019/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'system_top_i/axi_cpu_interconnect/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [D:/Xilinx/vivado2019/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'system_top_i/axi_cpu_interconnect/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst'
+Finished Sourcing Tcl File [D:/Xilinx/vivado2019/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'system_top_i/axi_cpu_interconnect/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst'
+Sourcing Tcl File [D:/Xilinx/vivado2019/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'system_top_i/axi_cpu_interconnect/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [D:/Xilinx/vivado2019/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'system_top_i/axi_cpu_interconnect/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [D:/Xilinx/vivado2019/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'system_top_i/axi_cpu_interconnect/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst'
+Finished Sourcing Tcl File [D:/Xilinx/vivado2019/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'system_top_i/axi_cpu_interconnect/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst'
+Sourcing Tcl File [D:/Xilinx/vivado2019/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'system_top_i/axi_cpu_interconnect/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [D:/Xilinx/vivado2019/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'system_top_i/axi_cpu_interconnect/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [D:/Xilinx/vivado2019/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'system_top_i/axi_cpu_interconnect/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Finished Sourcing Tcl File [D:/Xilinx/vivado2019/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'system_top_i/axi_cpu_interconnect/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Sourcing Tcl File [D:/Xilinx/vivado2019/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'system_top_i/axi_cpu_interconnect/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Finished Sourcing Tcl File [D:/Xilinx/vivado2019/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'system_top_i/axi_cpu_interconnect/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Sourcing Tcl File [D:/Xilinx/vivado2019/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'system_top_i/axi_cpu_interconnect/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Finished Sourcing Tcl File [D:/Xilinx/vivado2019/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'system_top_i/axi_cpu_interconnect/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Sourcing Tcl File [D:/Xilinx/vivado2019/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'system_top_i/axi_cpu_interconnect/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Finished Sourcing Tcl File [D:/Xilinx/vivado2019/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'system_top_i/axi_cpu_interconnect/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Sourcing Tcl File [D:/Xilinx/vivado2019/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'system_top_i/axi_cpu_interconnect/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Finished Sourcing Tcl File [D:/Xilinx/vivado2019/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'system_top_i/axi_cpu_interconnect/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Sourcing Tcl File [D:/Xilinx/vivado2019/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'system_top_i/axi_cpu_interconnect/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Finished Sourcing Tcl File [D:/Xilinx/vivado2019/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'system_top_i/axi_cpu_interconnect/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Sourcing Tcl File [D:/Xilinx/vivado2019/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'system_top_i/axi_cpu_interconnect/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Finished Sourcing Tcl File [D:/Xilinx/vivado2019/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'system_top_i/axi_cpu_interconnect/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Sourcing Tcl File [D:/Xilinx/vivado2019/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'system_top_i/axi_cpu_interconnect/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Finished Sourcing Tcl File [D:/Xilinx/vivado2019/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'system_top_i/axi_cpu_interconnect/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Sourcing Tcl File [D:/Xilinx/vivado2019/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'system_top_i/axi_cpu_interconnect/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Finished Sourcing Tcl File [D:/Xilinx/vivado2019/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'system_top_i/axi_cpu_interconnect/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Sourcing Tcl File [D:/Xilinx/vivado2019/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'system_top_i/axi_cpu_interconnect/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Finished Sourcing Tcl File [D:/Xilinx/vivado2019/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'system_top_i/axi_cpu_interconnect/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Sourcing Tcl File [D:/Xilinx/vivado2019/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'system_top_i/axi_cpu_interconnect/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.xpm_cdc_single_inst3'
+Finished Sourcing Tcl File [D:/Xilinx/vivado2019/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'system_top_i/axi_cpu_interconnect/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.xpm_cdc_single_inst3'
+Sourcing Tcl File [D:/Xilinx/vivado2019/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'system_top_i/axi_cpu_interconnect/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.xpm_cdc_single_inst1'
+Finished Sourcing Tcl File [D:/Xilinx/vivado2019/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'system_top_i/axi_cpu_interconnect/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.xpm_cdc_single_inst1'
+Sourcing Tcl File [D:/Xilinx/vivado2019/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'system_top_i/axi_cpu_interconnect/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.xpm_cdc_single_inst2'
+Finished Sourcing Tcl File [D:/Xilinx/vivado2019/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'system_top_i/axi_cpu_interconnect/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.xpm_cdc_single_inst2'
+Sourcing Tcl File [D:/Xilinx/vivado2019/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'system_top_i/axi_cpu_interconnect/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Finished Sourcing Tcl File [D:/Xilinx/vivado2019/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'system_top_i/axi_cpu_interconnect/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Sourcing Tcl File [D:/Xilinx/vivado2019/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'system_top_i/axi_cpu_interconnect/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Finished Sourcing Tcl File [D:/Xilinx/vivado2019/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'system_top_i/axi_cpu_interconnect/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Sourcing Tcl File [D:/Xilinx/vivado2019/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'system_top_i/axi_cpu_interconnect/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Finished Sourcing Tcl File [D:/Xilinx/vivado2019/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'system_top_i/axi_cpu_interconnect/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Sourcing Tcl File [D:/Xilinx/vivado2019/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'system_top_i/axi_cpu_interconnect/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Finished Sourcing Tcl File [D:/Xilinx/vivado2019/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'system_top_i/axi_cpu_interconnect/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Sourcing Tcl File [D:/Xilinx/vivado2019/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'system_top_i/axi_cpu_interconnect/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Finished Sourcing Tcl File [D:/Xilinx/vivado2019/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'system_top_i/axi_cpu_interconnect/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Sourcing Tcl File [D:/Xilinx/vivado2019/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'system_top_i/axi_cpu_interconnect/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Finished Sourcing Tcl File [D:/Xilinx/vivado2019/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'system_top_i/axi_cpu_interconnect/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Sourcing Tcl File [D:/Xilinx/vivado2019/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'system_top_i/axi_cpu_interconnect/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Finished Sourcing Tcl File [D:/Xilinx/vivado2019/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'system_top_i/axi_cpu_interconnect/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Sourcing Tcl File [D:/Xilinx/vivado2019/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'system_top_i/axi_cpu_interconnect/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Finished Sourcing Tcl File [D:/Xilinx/vivado2019/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'system_top_i/axi_cpu_interconnect/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Sourcing Tcl File [D:/Xilinx/vivado2019/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'system_top_i/axi_cpu_interconnect/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Finished Sourcing Tcl File [D:/Xilinx/vivado2019/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'system_top_i/axi_cpu_interconnect/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Sourcing Tcl File [D:/Xilinx/vivado2019/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'system_top_i/axi_cpu_interconnect/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Finished Sourcing Tcl File [D:/Xilinx/vivado2019/Vivado/2019.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'system_top_i/axi_cpu_interconnect/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1637.797 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 44 instances were transformed.
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 44 instances
+
+12 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:27 . Memory (MB): peak = 1637.797 ; gain = 1234.922
+INFO: [Common 17-600] The following parameters have non-default value.
+general.maxThreads
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 12 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.671 . Memory (MB): peak = 1637.797 ; gain = 0.000
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 173eb77e3
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1637.797 ; gain = 0.000
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 1 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 209465112
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1726.000 ; gain = 4.957
+INFO: [Opt 31-389] Phase Retarget created 811 cells and removed 1071 cells
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: 25d39f747
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1726.000 ; gain = 4.957
+INFO: [Opt 31-389] Phase Constant propagation created 1844 cells and removed 4261 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 231f743ac
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 1726.000 ; gain = 4.957
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 422 cells
+INFO: [Opt 31-1021] In phase Sweep, 120 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 BUFG optimization
+INFO: [Opt 31-274] Optimized connectivity to 1 cascaded buffer cells
+Phase 4 BUFG optimization | Checksum: 1a8917ed3
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 1726.000 ; gain = 4.957
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 1 cells.
+
+Phase 5 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 5 Shift Register Optimization | Checksum: 1a8917ed3
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 1726.000 ; gain = 4.957
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: 245a88083
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 1726.000 ; gain = 4.957
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+INFO: [Opt 31-1021] In phase Post Processing Netlist, 15 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |             811  |            1071  |                                              0  |
+|  Constant propagation         |            1844  |            4261  |                                              0  |
+|  Sweep                        |               0  |             422  |                                            120  |
+|  BUFG optimization            |               0  |               1  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                             15  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.076 . Memory (MB): peak = 1726.000 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 1f9c9f0c1
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:11 . Memory (MB): peak = 1726.000 ; gain = 4.957
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+Ending Power Optimization Task | Checksum: 1f9c9f0c1
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.092 . Memory (MB): peak = 1726.000 ; gain = 0.000
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 1f9c9f0c1
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1726.000 ; gain = 0.000
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1726.000 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: 1f9c9f0c1
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1726.000 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+33 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:16 . Memory (MB): peak = 1726.000 ; gain = 88.203
+INFO: [Common 17-600] The following parameters have non-default value.
+general.maxThreads
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 1726.000 ; gain = 0.000
+Writing placer database...
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.053 . Memory (MB): peak = 1726.000 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'E:/Desktop/ingProject/Simulink_prj/RWR_to_zynq/channel_cordict_par_test_4_24/hdl_prj/vivado_ip_prj/vivado_prj.runs/impl_1/system_top_wrapper_opt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 1726.000 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_drc -file system_top_wrapper_drc_opted.rpt -pb system_top_wrapper_drc_opted.pb -rpx system_top_wrapper_drc_opted.rpx
+Command: report_drc -file system_top_wrapper_drc_opted.rpt -pb system_top_wrapper_drc_opted.pb -rpx system_top_wrapper_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 12 threads
+INFO: [Coretcl 2-168] The results of DRC are in file E:/Desktop/ingProject/Simulink_prj/RWR_to_zynq/channel_cordict_par_test_4_24/hdl_prj/vivado_ip_prj/vivado_prj.runs/impl_1/system_top_wrapper_drc_opted.rpt.
+report_drc completed successfully
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [DRC 23-27] Running DRC with 12 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 12 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 8 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 1789.641 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 1885b1243
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.158 . Memory (MB): peak = 1789.641 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 1789.641 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: dd2d2975
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1800.758 ; gain = 11.117
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: be6e91ab
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:12 . Memory (MB): peak = 2102.590 ; gain = 312.949
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: be6e91ab
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:12 . Memory (MB): peak = 2102.590 ; gain = 312.949
+Phase 1 Placer Initialization | Checksum: be6e91ab
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:12 . Memory (MB): peak = 2102.590 ; gain = 312.949
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+Phase 2.1 Floorplanning | Checksum: 133ee39a3
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:14 . Memory (MB): peak = 2102.590 ; gain = 312.949
+
+Phase 2.2 Global Placement Core
+
+Phase 2.2.1 Physical Synthesis In Placer
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-670] No setup violation found.  DSP Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  Shift Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  BRAM Register Optimization was not performed.
+INFO: [Physopt 32-949] No candidate nets found for HD net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 2102.590 ; gain = 0.000
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+----------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                  |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+----------------------------------------------------------------------------------------------------------------------------------------
+|  Very High Fanout              |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  DSP Register                  |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Shift Register                |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  BRAM Register                 |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  HD Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                         |            0  |              0  |                     0  |           0  |           2  |  00:00:00  |
+----------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.2.1 Physical Synthesis In Placer | Checksum: 16f8763ad
+
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:41 . Memory (MB): peak = 2102.590 ; gain = 312.949
+Phase 2.2 Global Placement Core | Checksum: ddd245ff
+
+Time (s): cpu = 00:00:43 ; elapsed = 00:00:42 . Memory (MB): peak = 2102.590 ; gain = 312.949
+Phase 2 Global Placement | Checksum: ddd245ff
+
+Time (s): cpu = 00:00:43 ; elapsed = 00:00:42 . Memory (MB): peak = 2102.590 ; gain = 312.949
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 7f14f568
+
+Time (s): cpu = 00:00:46 ; elapsed = 00:00:46 . Memory (MB): peak = 2102.590 ; gain = 312.949
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 10c698dc8
+
+Time (s): cpu = 00:00:51 ; elapsed = 00:00:56 . Memory (MB): peak = 2102.590 ; gain = 312.949
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 126e3b4ef
+
+Time (s): cpu = 00:00:51 ; elapsed = 00:00:57 . Memory (MB): peak = 2102.590 ; gain = 312.949
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 17abe2aa6
+
+Time (s): cpu = 00:00:51 ; elapsed = 00:00:57 . Memory (MB): peak = 2102.590 ; gain = 312.949
+
+Phase 3.5 Small Shape Detail Placement
+Phase 3.5 Small Shape Detail Placement | Checksum: cae03129
+
+Time (s): cpu = 00:00:55 ; elapsed = 00:01:04 . Memory (MB): peak = 2102.590 ; gain = 312.949
+
+Phase 3.6 Re-assign LUT pins
+Phase 3.6 Re-assign LUT pins | Checksum: 1523ba24a
+
+Time (s): cpu = 00:00:56 ; elapsed = 00:01:06 . Memory (MB): peak = 2102.590 ; gain = 312.949
+
+Phase 3.7 Pipeline Register Optimization
+Phase 3.7 Pipeline Register Optimization | Checksum: 1111b604e
+
+Time (s): cpu = 00:00:56 ; elapsed = 00:01:06 . Memory (MB): peak = 2102.590 ; gain = 312.949
+Phase 3 Detail Placement | Checksum: 1111b604e
+
+Time (s): cpu = 00:00:56 ; elapsed = 00:01:07 . Memory (MB): peak = 2102.590 ; gain = 312.949
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 10c40752f
+
+Phase 4.1.1.1 BUFG Insertion
+INFO: [Place 46-33] Processed net system_top_i/Subsystem_ip_0/U0/u_Subsystem_ip_reset_sync_inst/reset, BUFG insertion was skipped due to placement/routing conflicts.
+INFO: [Place 46-33] Processed net system_top_i/Subsystem_ip_0/U0/u_Subsystem_ip_dut_inst/u_Subsystem_ip_src_Subsystem/u_Subsystem_tc/enb_1_32_0, BUFG insertion was skipped due to placement/routing conflicts.
+INFO: [Place 46-33] Processed net system_top_i/Subsystem_ip_0/U0/u_Subsystem_ip_axi_lite_inst/u_Subsystem_ip_addr_decoder_inst/dut_enable, BUFG insertion was skipped due to placement/routing conflicts.
+INFO: [Place 46-33] Processed net system_top_i/Subsystem_ip_0/U0/u_Subsystem_ip_dut_inst/u_Subsystem_ip_src_Subsystem/u_Subsystem_tc/phase_0_reg_0[0], BUFG insertion was skipped due to placement/routing conflicts.
+INFO: [Place 46-33] Processed net system_top_i/Subsystem_ip_0/U0/u_Subsystem_ip_dut_inst/u_Subsystem_ip_src_Subsystem/u_Subsystem_tc/phase_0_reg_10[0], BUFG insertion was skipped due to placement/routing conflicts.
+INFO: [Place 46-33] Processed net system_top_i/Subsystem_ip_0/U0/u_Subsystem_ip_dut_inst/u_Subsystem_ip_src_Subsystem/u_Subsystem_tc/phase_0_reg_11[0], BUFG insertion was skipped due to placement/routing conflicts.
+INFO: [Place 46-33] Processed net system_top_i/Subsystem_ip_0/U0/u_Subsystem_ip_dut_inst/u_Subsystem_ip_src_Subsystem/u_Subsystem_tc/phase_0_reg_13[0], BUFG insertion was skipped due to placement/routing conflicts.
+INFO: [Place 46-33] Processed net system_top_i/Subsystem_ip_0/U0/u_Subsystem_ip_dut_inst/u_Subsystem_ip_src_Subsystem/u_Subsystem_tc/phase_0_reg_1[0], BUFG insertion was skipped due to placement/routing conflicts.
+INFO: [Place 46-33] Processed net system_top_i/Subsystem_ip_0/U0/u_Subsystem_ip_dut_inst/u_Subsystem_ip_src_Subsystem/u_Subsystem_tc/phase_0_reg_8[0], BUFG insertion was skipped due to placement/routing conflicts.
+INFO: [Place 46-33] Processed net system_top_i/Subsystem_ip_0/U0/u_Subsystem_ip_dut_inst/u_Subsystem_ip_src_Subsystem/u_Subsystem/Deserializer1D_out1_re_reg[0]0, BUFG insertion was skipped due to placement/routing conflicts.
+INFO: [Place 46-56] BUFG insertion identified 10 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 10, Skipped due to Timing Degradation: 0, Skipped due to Illegal Netlist: 0.
+Phase 4.1.1.1 BUFG Insertion | Checksum: 10c40752f
+
+Time (s): cpu = 00:01:02 ; elapsed = 00:01:14 . Memory (MB): peak = 2116.723 ; gain = 327.082
+INFO: [Place 30-746] Post Placement Timing Summary WNS=6.446. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: 5b585ed9
+
+Time (s): cpu = 00:01:02 ; elapsed = 00:01:14 . Memory (MB): peak = 2116.723 ; gain = 327.082
+Phase 4.1 Post Commit Optimization | Checksum: 5b585ed9
+
+Time (s): cpu = 00:01:03 ; elapsed = 00:01:14 . Memory (MB): peak = 2116.723 ; gain = 327.082
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 5b585ed9
+
+Time (s): cpu = 00:01:03 ; elapsed = 00:01:15 . Memory (MB): peak = 2116.723 ; gain = 327.082
+
+Phase 4.3 Placer Reporting
+Phase 4.3 Placer Reporting | Checksum: 5b585ed9
+
+Time (s): cpu = 00:01:03 ; elapsed = 00:01:15 . Memory (MB): peak = 2116.723 ; gain = 327.082
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 2116.723 ; gain = 0.000
+Phase 4.4 Final Placement Cleanup | Checksum: b15cb118
+
+Time (s): cpu = 00:01:03 ; elapsed = 00:01:15 . Memory (MB): peak = 2116.723 ; gain = 327.082
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: b15cb118
+
+Time (s): cpu = 00:01:03 ; elapsed = 00:01:15 . Memory (MB): peak = 2116.723 ; gain = 327.082
+Ending Placer Task | Checksum: 925442d2
+
+Time (s): cpu = 00:01:03 ; elapsed = 00:01:15 . Memory (MB): peak = 2116.723 ; gain = 327.082
+INFO: [Common 17-83] Releasing license: Implementation
+71 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:01:05 ; elapsed = 00:01:18 . Memory (MB): peak = 2116.723 ; gain = 371.312
+INFO: [Common 17-600] The following parameters have non-default value.
+general.maxThreads
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 2116.723 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 2116.723 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'E:/Desktop/ingProject/Simulink_prj/RWR_to_zynq/channel_cordict_par_test_4_24/hdl_prj/vivado_ip_prj/vivado_prj.runs/impl_1/system_top_wrapper_placed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 2116.723 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_io -file system_top_wrapper_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.069 . Memory (MB): peak = 2116.723 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_utilization -file system_top_wrapper_utilization_placed.rpt -pb system_top_wrapper_utilization_placed.pb
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file system_top_wrapper_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2116.723 ; gain = 0.000
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 8 CPUs
+Checksum: PlaceDB: 9a6cc12 ConstDB: 0 ShapeSum: 88ad76c0 RouteDB: 0
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: 18abb4aaf
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:16 . Memory (MB): peak = 2197.320 ; gain = 26.117
+Post Restoration Checksum: NetGraph: b50877b3 NumContArr: d5b2d2fc Constraints: 0 Timing: 0
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: 18abb4aaf
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:17 . Memory (MB): peak = 2225.168 ; gain = 53.965
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: 18abb4aaf
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:17 . Memory (MB): peak = 2259.203 ; gain = 88.000
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: 18abb4aaf
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:17 . Memory (MB): peak = 2259.203 ; gain = 88.000
+ Number of Nodes with overlaps = 0
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 1862edaa6
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:23 . Memory (MB): peak = 2312.832 ; gain = 141.629
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=6.425  | TNS=0.000  | WHS=-0.207 | THS=-391.428|
+
+
+Phase 2.5 Update Timing for Bus Skew
+
+Phase 2.5.1 Update Timing
+Phase 2.5.1 Update Timing | Checksum: 175041b54
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:27 . Memory (MB): peak = 2395.988 ; gain = 224.785
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=6.425  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 2.5 Update Timing for Bus Skew | Checksum: e485e671
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:27 . Memory (MB): peak = 2395.988 ; gain = 224.785
+Phase 2 Router Initialization | Checksum: e6758072
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:27 . Memory (MB): peak = 2395.988 ; gain = 224.785
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0 %
+  Global Horizontal Routing Utilization  = 0 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 55120
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 55119
+  Number of Partially Routed Nets     = 1
+  Number of Node Overlaps             = 0
+
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 167fb9833
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:29 . Memory (MB): peak = 2395.988 ; gain = 224.785
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 1757
+ Number of Nodes with overlaps = 60
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=4.958  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: 1645fe172
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:35 . Memory (MB): peak = 2395.988 ; gain = 224.785
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=4.958  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: 807954c7
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:36 . Memory (MB): peak = 2395.988 ; gain = 224.785
+Phase 4 Rip-up And Reroute | Checksum: 807954c7
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:36 . Memory (MB): peak = 2395.988 ; gain = 224.785
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+Phase 5.1 Delay CleanUp | Checksum: 807954c7
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:36 . Memory (MB): peak = 2395.988 ; gain = 224.785
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 807954c7
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:36 . Memory (MB): peak = 2395.988 ; gain = 224.785
+Phase 5 Delay and Skew Optimization | Checksum: 807954c7
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:36 . Memory (MB): peak = 2395.988 ; gain = 224.785
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 15199b1f9
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:37 . Memory (MB): peak = 2395.988 ; gain = 224.785
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=4.958  | TNS=0.000  | WHS=0.018  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: ca5b5fc3
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:37 . Memory (MB): peak = 2395.988 ; gain = 224.785
+Phase 6 Post Hold Fix | Checksum: ca5b5fc3
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:37 . Memory (MB): peak = 2395.988 ; gain = 224.785
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 13.5957 %
+  Global Horizontal Routing Utilization  = 14.9915 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 7 Route finalize | Checksum: ca5b5fc3
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:37 . Memory (MB): peak = 2395.988 ; gain = 224.785
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: ca5b5fc3
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:37 . Memory (MB): peak = 2395.988 ; gain = 224.785
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: a6b7df55
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:41 . Memory (MB): peak = 2395.988 ; gain = 224.785
+
+Phase 10 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=4.958  | TNS=0.000  | WHS=0.018  | THS=0.000  |
+
+INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
+Phase 10 Post Router Timing | Checksum: a6b7df55
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:41 . Memory (MB): peak = 2395.988 ; gain = 224.785
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:41 . Memory (MB): peak = 2395.988 ; gain = 224.785
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+91 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:43 . Memory (MB): peak = 2395.988 ; gain = 279.266
+INFO: [Common 17-600] The following parameters have non-default value.
+general.maxThreads
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 2395.988 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2395.988 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'E:/Desktop/ingProject/Simulink_prj/RWR_to_zynq/channel_cordict_par_test_4_24/hdl_prj/vivado_ip_prj/vivado_prj.runs/impl_1/system_top_wrapper_routed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 2395.988 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_drc -file system_top_wrapper_drc_routed.rpt -pb system_top_wrapper_drc_routed.pb -rpx system_top_wrapper_drc_routed.rpx
+Command: report_drc -file system_top_wrapper_drc_routed.rpt -pb system_top_wrapper_drc_routed.pb -rpx system_top_wrapper_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Coretcl 2-168] The results of DRC are in file E:/Desktop/ingProject/Simulink_prj/RWR_to_zynq/channel_cordict_par_test_4_24/hdl_prj/vivado_ip_prj/vivado_prj.runs/impl_1/system_top_wrapper_drc_routed.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 2395.988 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_methodology -file system_top_wrapper_methodology_drc_routed.rpt -pb system_top_wrapper_methodology_drc_routed.pb -rpx system_top_wrapper_methodology_drc_routed.rpx
+Command: report_methodology -file system_top_wrapper_methodology_drc_routed.rpt -pb system_top_wrapper_methodology_drc_routed.pb -rpx system_top_wrapper_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 8 threads
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file E:/Desktop/ingProject/Simulink_prj/RWR_to_zynq/channel_cordict_par_test_4_24/hdl_prj/vivado_ip_prj/vivado_prj.runs/impl_1/system_top_wrapper_methodology_drc_routed.rpt.
+report_methodology completed successfully
+report_methodology: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 2510.066 ; gain = 114.078
+INFO: [runtcl-4] Executing : report_power -file system_top_wrapper_power_routed.rpt -pb system_top_wrapper_power_summary_routed.pb -rpx system_top_wrapper_power_routed.rpx
+Command: report_power -file system_top_wrapper_power_routed.rpt -pb system_top_wrapper_power_summary_routed.pb -rpx system_top_wrapper_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+104 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power: Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 2510.066 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_route_status -file system_top_wrapper_route_status.rpt -pb system_top_wrapper_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -file system_top_wrapper_timing_summary_routed.rpt -pb system_top_wrapper_timing_summary_routed.pb -rpx system_top_wrapper_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+INFO: [runtcl-4] Executing : report_incremental_reuse -file system_top_wrapper_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [runtcl-4] Executing : report_clock_utilization -file system_top_wrapper_clock_utilization_routed.rpt
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file system_top_wrapper_bus_skew_routed.rpt -pb system_top_wrapper_bus_skew_routed.pb -rpx system_top_wrapper_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+Command: write_bitstream -force system_top_wrapper.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+WARNING: [DRC RTSTAT-10] No routable loads: 15 net(s) have no routable loads. The problem bus(es) and/or net(s) are system_top_i/axi_cpu_interconnect/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, system_top_i/axi_cpu_interconnect/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, system_top_i/axi_cpu_interconnect/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, system_top_i/axi_cpu_interconnect/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, system_top_i/axi_cpu_interconnect/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, system_top_i/axi_cpu_interconnect/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i, system_top_i/axi_cpu_interconnect/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i, system_top_i/axi_cpu_interconnect/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i, system_top_i/axi_cpu_interconnect/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i, system_top_i/axi_cpu_interconnect/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i, system_top_i/axi_cpu_interconnect/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/user_valid, system_top_i/axi_cpu_interconnect/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/user_valid, system_top_i/axi_cpu_interconnect/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/user_valid, system_top_i/axi_cpu_interconnect/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/user_valid, and system_top_i/axi_cpu_interconnect/s00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/user_valid.
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 1 Warnings
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+INFO: [Designutils 20-2272] Running write_bitstream with 8 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./system_top_wrapper.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-120] WebTalk data collection is mandatory when using a WebPACK part without a full Vivado license. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
+INFO: [Common 17-186] 'E:/Desktop/ingProject/Simulink_prj/RWR_to_zynq/channel_cordict_par_test_4_24/hdl_prj/vivado_ip_prj/vivado_prj.runs/impl_1/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Tue Apr 25 13:32:45 2023. For additional details about this file, please refer to the WebTalk help file at D:/Xilinx/vivado2019/Vivado/2019.1/doc/webtalk_introduction.html.
+INFO: [Common 17-83] Releasing license: Implementation
+124 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 2848.445 ; gain = 338.379
+INFO: [Common 17-206] Exiting Vivado at Tue Apr 25 13:32:45 2023...

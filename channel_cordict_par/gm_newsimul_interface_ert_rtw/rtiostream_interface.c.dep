@@ -1,0 +1,23 @@
+rtiostream_interface.c.o: \
+ D:/MATLAB/R2023a/rtw/c/src/ext_mode/common/rtiostream_interface.c \
+ D:/MATLAB/R2023a/rtw/c/src/ext_mode/common/updown_util.h \
+ E:/Desktop/ingProject/Simulink_prj/RWR_to_zynq/channel_cordict_par_test_4_24/gm_newsimul_interface_ert_rtw/rtwtypes.h \
+ D:/MATLAB/R2023a/simulink/include/rtw_extmode.h \
+ D:/MATLAB/R2023a/toolbox/coder/rtiostream/src/rtiostream.h \
+ D:/MATLAB/R2023a/toolbox/coder/rtiostream/src/utils/rtiostream_utils.h \
+ D:/MATLAB/R2023a/rtw/c/src/ext_mode/common/ext_types.h \
+ D:/MATLAB/R2023a/rtw/c/src/ext_mode/common/ext_share.h
+
+D:/MATLAB/R2023a/rtw/c/src/ext_mode/common/updown_util.h:
+
+E:/Desktop/ingProject/Simulink_prj/RWR_to_zynq/channel_cordict_par_test_4_24/gm_newsimul_interface_ert_rtw/rtwtypes.h:
+
+D:/MATLAB/R2023a/simulink/include/rtw_extmode.h:
+
+D:/MATLAB/R2023a/toolbox/coder/rtiostream/src/rtiostream.h:
+
+D:/MATLAB/R2023a/toolbox/coder/rtiostream/src/utils/rtiostream_utils.h:
+
+D:/MATLAB/R2023a/rtw/c/src/ext_mode/common/ext_types.h:
+
+D:/MATLAB/R2023a/rtw/c/src/ext_mode/common/ext_share.h:

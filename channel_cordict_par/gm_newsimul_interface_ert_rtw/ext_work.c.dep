@@ -1,0 +1,28 @@
+ext_work.c.o: D:/MATLAB/R2023a/rtw/c/src/ext_mode/common/ext_work.c \
+ E:/Desktop/ingProject/Simulink_prj/RWR_to_zynq/channel_cordict_par_test_4_24/gm_newsimul_interface_ert_rtw/rtwtypes.h \
+ D:/MATLAB/R2023a/simulink/include/rtw_extmode.h \
+ D:/MATLAB/R2023a/rtw/c/src/ext_mode/common/ext_types.h \
+ D:/MATLAB/R2023a/rtw/c/src/ext_mode/common/ext_share.h \
+ D:/MATLAB/R2023a/rtw/c/src/ext_mode/common/updown.h \
+ D:/MATLAB/R2023a/rtw/c/src/ext_mode/common/upsup_public.h \
+ D:/MATLAB/R2023a/rtw/c/src/ext_mode/common/ext_svr.h \
+ D:/MATLAB/R2023a/rtw/c/src/ext_mode/common/ext_svr_transport.h \
+ D:/MATLAB/R2023a/rtw/c/src/ext_mode/common/ext_work.h
+
+E:/Desktop/ingProject/Simulink_prj/RWR_to_zynq/channel_cordict_par_test_4_24/gm_newsimul_interface_ert_rtw/rtwtypes.h:
+
+D:/MATLAB/R2023a/simulink/include/rtw_extmode.h:
+
+D:/MATLAB/R2023a/rtw/c/src/ext_mode/common/ext_types.h:
+
+D:/MATLAB/R2023a/rtw/c/src/ext_mode/common/ext_share.h:
+
+D:/MATLAB/R2023a/rtw/c/src/ext_mode/common/updown.h:
+
+D:/MATLAB/R2023a/rtw/c/src/ext_mode/common/upsup_public.h:
+
+D:/MATLAB/R2023a/rtw/c/src/ext_mode/common/ext_svr.h:
+
+D:/MATLAB/R2023a/rtw/c/src/ext_mode/common/ext_svr_transport.h:
+
+D:/MATLAB/R2023a/rtw/c/src/ext_mode/common/ext_work.h:
